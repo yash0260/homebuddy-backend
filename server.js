@@ -14,7 +14,7 @@ app.use(cors({
     'http://localhost:3001',
     process.env.FRONTEND_URL,
     'https://homebuddy.vercel.app',
-    'https://homebuddy-yourusername.vercel.app'
+    'https://homebuddy-frontend-five.vercel.app',
   ],
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
