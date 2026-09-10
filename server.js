@@ -24,6 +24,11 @@ app.use(cors({
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true, limit: '50mb' }));
 
+// Loader.io verification
+app.get('/loaderio-8d6a473a88acba7fe1c9f79b1067bc2e*', (req, res) => {
+  res.send('loaderio-8d6a473a88acba7fe1c9f79b1067bc2e');
+});
+
 app.use('/api/auth', require('./routes/authRoutes'));
 app.use('/api/properties', require('./routes/propertyRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
